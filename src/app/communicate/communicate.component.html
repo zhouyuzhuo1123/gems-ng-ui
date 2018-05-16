@@ -1,0 +1,27 @@
+<main class="">
+<div class="content">
+	<div class="notice">GMES-CLIENT-SERVICECODE(接口对象说明以及路由)</div>
+<!-- 	<ul class="navbar f-df" counting>
+	<li *ngFor="let tabs of tablist" [class.activeTab]="currentTab === tabs.type" (click)="selectTab(tabs.type)">{{tabs.text}}</li>
+</ul> -->
+	<div class="topic_list">
+		<div class="factory-detail" *ngFor="let items of codeArr">
+			<div class="factory"  style="font-size:13px;">
+				<span style="margin-left: 10px;width:210px;text-align:left">{{items.CODE}}</span>
+				<span style="padding: 0 30px;width:400px;text-align:left">{{items.NAME}}</span>
+				<span style="flex:1">{{(items.SERVICECONFIG)}}</span>
+			</div>
+		</div>
+	</div>
+	<div id="backtotop" [style.display]="show ? 'block': 'none'" (click)="backtop()">返回顶部</div>
+</div>
+
+<!-- <a routerLink="/communicate" *ngFor="let hero of heroes">
+  {{hero.name}}
+</a>  -->
+</main>
+
+
+
+
+

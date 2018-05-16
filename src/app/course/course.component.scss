@@ -1,0 +1,157 @@
+main {
+  font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	width: 80%;
+	min-width: 1000px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	/* display: flex; */
+	-ms-flex-wrap: wrap;
+	/* flex-wrap: wrap; */
+	margin: 20px auto 0;
+	background: #FFF;
+	color: #999;
+}
+
+.content{
+	width:100%;
+}
+
+.content .navbar{
+	padding: 10px;
+	background-color: #f6f6f6;
+	border-radius: 3px 3px 0 0;
+	cursor:pointer;
+}
+.content .navbar li{
+    padding:5px 10px;
+    color: #80bd01;
+}
+.content .navbar li.activeTab{
+	background-color: #80bd01;
+    color: #fff;
+    border-radius: 3px;
+}
+.topic_list{
+	width:50%;
+	margin:0 auto;
+	.form-item{
+		margin:30px;
+		label{
+			width:100px;
+			overflow:hidden;
+		}
+	}
+}
+
+.topic_list .topic-title-wrapper{
+	display: flex;
+	align-items:center;
+	padding: 10px 12px;
+ 	border-bottom: 1px solid #f0f0f0;
+	
+}
+
+.topic_list .topic-title-wrapper .avatar{
+	border-radius: 3px;
+}
+
+.topic_list .topic-title-wrapper .reply_count{
+	display: block;
+	width: 70px;
+	text-align: left;
+	margin-left: 10px;
+}
+
+.topic_list .topic-title-wrapper .reply_count .count_of_replies{
+	color: #9e78c0;
+}
+
+.topic_list .topic-title-wrapper .reply_count .count_seperator{
+	margin: 0 -3px;
+  font-size: 10px;
+}
+
+.topic_list .topic-title-wrapper .topic_title{
+	text-align: left;
+	font-size: 1rem;
+	margin-left: 5px;
+}
+
+.topiclist-tab{
+	background-color: #e5e5e5;
+	color: #999;
+	padding: 2px 4px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	font-size: 12px;
+}
+.pagination{
+	padding:10px 0;
+}
+.pagination ul{
+	display: flex;
+	margin-left: 10px;
+}
+.pagination ul li:first-child{
+	border-left: 1px solid #DDD;
+	border-radius: 3px 0 0 3px;
+}
+.pagination ul li:last-child{
+	border-radius: 0 3px 3px 0;
+}
+.pagination ul li{
+	padding: 6px 12px;
+	border:1px solid #DDD;
+	border-left-width: 0;
+	cursor: pointer;
+}
+
+.pagination .active{
+	color:#80bd01;
+}
+#backtotop{
+	width: 24px;
+    color: gray;
+    padding: 12px 0 12px 5px;
+    position: fixed;
+    cursor: pointer;
+    text-align: center;
+    z-index: 20;
+    background-color: #fff;
+    border-radius: 12px 0 0 12px;
+    top: 669px;
+    right: 0px;
+}
+
+.factory-detail{
+	display: flex;
+	padding: 10px 0;
+}
+
+.factory-detail .factory{
+	display: flex;
+	align-items:center;
+}
+
+.factory-detail .list{
+	display: flex;
+	align-items:center;
+	margin:0 20px;
+	flex:1;
+}
+.factory-detail .list .btn{
+	padding: 0 10px;
+}
+
+.notice{
+	padding: 10px;
+    background: #FF5000;
+    color: #fff;
+}
+.notice span{
+	font-size: 16px;
+	padding:0 4px;
+}

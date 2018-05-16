@@ -1,0 +1,57 @@
+<main class="">
+<!-- <p>1:房间要2个还是3个</p>
+<p>1:卫生间1个还是2个</p>
+<p>3厨房接不接受开放式</p>
+<p>柜子要木工师傅还是全屋定制</p>
+<p>厨房用不用集成灶，要不要消毒柜蒸箱等</p>
+<p>风格</p> -->
+
+<!-- <a>客厅</a>
+ <a>餐厅</a>
+<a>厨房</a>
+<a>主卧</a>
+<a>次卧</a>
+<a>书房</a>
+<a>卫生间</a>
+<a>阳台</a>  -->
+<div class="content">
+	<div class="notice">演示环境为<span>柴姐</span>私人订制,非诚勿扰！</div>
+	<ul class="navbar f-df" counting>
+		<li *ngFor="let tabs of tablist" [class.activeTab]="currentTab === tabs.type" (click)="selectTab(tabs.type)">{{tabs.text}}</li>
+	</ul>
+	<div class="topic_list">
+		<div class="factory-detail" *ngFor="let items of factoryListA">
+			<div class="factory">
+				<span>{{items.factoryName}}</span>
+				<span>({{items.siteCode}})</span>
+				<span>(测试)</span>
+			</div>
+			<div class="list">
+				<div *ngFor="let item of items.list">
+					<a target="_blank" *ngIf="!item.ispro && item.href" class="btn" [href]="item.href">{{item.title}}</a>
+				</div>
+			</div>
+			<!-- <div class="factory">
+				<span>{{items.factoryName}}</span>
+				<span>({{items.siteCode}})</span>
+				<span>(正式)</span>
+			</div>
+			<div class="list">
+				<div *ngFor="let item of items.list">
+					<a  *ngIf="item.ispro  && item.href" class="btn" [href]="item.href">{{item.title}}</a>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<div class="pagination">
+	
+	</div>
+	<div id="backtotop" [style.display]="show ? 'block': 'none'" (click)="backtop()">返回顶部</div>
+</div>
+
+<!-- <a routerLink="/communicate" *ngFor="let hero of heroes">
+  {{hero.name}}
+</a>  -->
+</main>
+
+

@@ -1,0 +1,31 @@
+<main class="">
+<div class="content">
+	<div class="notice">授课内容</div>
+	<div class="topic_list">
+		<div class="f-df f-aic form-item">
+			<label>课程名称*</label>
+			<el-input [(model)]="course" class="f-f1" placeholder="请输入内容"></el-input>
+		</div>
+		<div class="f-df f-aic form-item">
+			<label>授课人*</label>
+			<el-input [(model)]="person" class="f-f1"  placeholder="请输入内容"></el-input>
+		</div>
+		<div class="f-df f-aic form-item">
+			<label>授课时间</label>
+			<el-date-picker (modelChange)="handle($event)">
+			</el-date-picker>
+		</div>
+		<div class="f-df f-aic form-item">
+			<label>培训时长</label>
+			<el-input [(model)]="time" class="f-f1"  placeholder="单位小时"></el-input>
+		</div>
+		<div class="f-df f-aic f-jcc form-item f-p10" >
+			<el-button type="primary" (click)="pushs()">提交</el-button>
+		</div>
+	</div>
+</div>
+
+<!-- <a routerLink="/communicate" *ngFor="let hero of heroes">
+  {{hero.name}}
+</a>  -->
+</main>
